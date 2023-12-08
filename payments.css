@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.cart-item img {
+    border-radius: 4px;
+}
+
+.payment {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200vw;
+    max-width: 600px;
+    margin: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(38%, 20%);
+}
+
+input[type="radio"] {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.payment label {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.payment label img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease, filter 0.3s ease;
+}
+
+.payment label:hover img {
+    border-color: rgb(117, 117, 125);
+    filter: grayscale(50%);
+}
+
+.payment label:active img {
+    filter: brightness(80%);
+}
+
+.payment input[type="radio"]:checked + label img {
+    border-color: rgb(198, 198, 219);
+    filter: none;
+}
+
+button {
+    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.momomodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.momomodal img {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.momomodal button {
+    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto;
+    display: block;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+.agree {
+    text-align: center;
+    align-items: center;
+}
+/* 
+#btn {
+    text-align: center;
+    align-items: center;
+}
+
+.thanhtoan {
+    text-align: center;
+    align-items: center;
+} */
